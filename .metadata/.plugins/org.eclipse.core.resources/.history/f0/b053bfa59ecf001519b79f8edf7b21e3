@@ -1,0 +1,12 @@
+package com.examples.myproject;
+
+public class Singleton {
+	
+	private Singleton(){}
+	
+	private static getInstance(){
+		
+		
+	}
+
+}

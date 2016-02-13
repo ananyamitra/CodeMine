@@ -1,0 +1,5 @@
+package com.examples.myproject;
+
+public class SingletonTest {
+
+}

@@ -1,0 +1,38 @@
+package com.examples.myproject;
+
+//Lazy initialization with double null check
+public class Singleton {
+	
+	//Make the instance volatile
+	private static volatile Singleton obj;	
+	//Make the constructor private
+	private Singleton(){}
+	
+	//use double null check mechanism to avoid synchronizing all getInstance calls
+	public static Singleton getInstance(){		
+		if(obj == null){
+			synchronized(Singleton.class){
+				if(obj == null)
+					obj = new Singleton();
+			}
+		}		
+		return obj;
+	}
+}
+
+//Approach using Inner Static Helper Class
+class AnotherSingletonHelper{
+	
+	private AnotherSingletonHelper(){};
+	
+	static class AnotherSingleton{
+		private static AnotherSingleton object = new AnotherSingleton();
+	}
+	
+	
+	public static AnotherSingleton getInstance(){
+		return AnotherSingleton.object;
+		
+	}
+	
+}

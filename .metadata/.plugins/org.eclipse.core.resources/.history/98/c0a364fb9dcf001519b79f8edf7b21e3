@@ -1,0 +1,12 @@
+package com.examples.myproject;
+
+public class Sigleton {
+	
+	private Sigleton(){}
+	
+	private static getInstance(){
+		
+		
+	}
+
+}
