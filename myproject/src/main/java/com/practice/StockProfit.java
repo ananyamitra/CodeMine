@@ -28,7 +28,7 @@ public class StockProfit {
 	
 	public int getMaxProfit(int[] stockPricesYesterday){
 		
-		// make sure we have at least 2 prices
+		//   make sure we have at least 2 prices
 	    if (stockPricesYesterday.length < 2) {
 	        throw new IllegalArgumentException("Getting a profit requires at least 2 prices");
 	    }

@@ -2,6 +2,18 @@ package com.inventory.vo;
 
 public class Order {
 	
+	
+/*create table purchase_order(
+orderid varchar(30),
+clientid varchar(30),
+clientname varchar(100),
+productid varchar(30),
+productname varchar(100),
+productqty int,
+comment varchar(100)
+);*/
+	
+	
 	private String orderId="Test";
 	private String clientId;
 	private String clientName;

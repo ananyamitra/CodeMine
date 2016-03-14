@@ -12,15 +12,14 @@ public class App
 {
     public static void main( String[] args )
     {
-    	  Scanner stdin = new Scanner(new BufferedInputStream(System.in));
-          while (stdin.hasNext()) {
-              System.out.println(Math.abs(stdin.nextLong() - stdin.nextLong()));
-          }
+    	 App app = new App();
+    	 app.testMethod();
 
-
-        
-        
-
+    }
+    
+    public void testMethod(){
+    	
+    	
     }
     
     
