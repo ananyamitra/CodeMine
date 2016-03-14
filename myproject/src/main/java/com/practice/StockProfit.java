@@ -59,7 +59,9 @@ public class StockProfit {
 	        minPrice = Math.min(minPrice, currentPrice);
 	    }
 
-	    return maxProfit;	}
+	    return maxProfit;	
+	    }
+
 	
 
 }
