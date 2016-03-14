@@ -51,7 +51,7 @@ public class StockProfit {
 	        // min price and sold at the current price
 	        int potentialProfit = currentPrice - minPrice;
 
-	        // update maxProfit if we can do better
+	        //  update maxProfit if we can do better
 	        maxProfit = Math.max(maxProfit, potentialProfit);
 
 	        // update minPrice so it's always
