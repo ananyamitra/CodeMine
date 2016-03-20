@@ -5,7 +5,7 @@ public class MySort {
 	public static void main(String[] args){
 		
 		int[] arrayToSort = {2, 4, 3, 9, 12, 7};
-		MySort sorter = new MySort();
+		MySort  sorter = new MySort();
 		//int[] arr = sorter.insertionSort(arrayToSort);
 		int[] arr = sorter.selectionSort(arrayToSort);
 		for(int i : arr)
