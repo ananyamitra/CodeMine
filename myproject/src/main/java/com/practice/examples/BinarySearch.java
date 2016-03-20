@@ -1,4 +1,4 @@
-package com.examples.myproject;
+package com.practice.examples;
 
 public class BinarySearch {
 	

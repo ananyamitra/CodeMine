@@ -1,4 +1,4 @@
-package com.examples.myproject;
+package com.practice.examples;
 
 //Lazy initialization with double null check
 public class Singleton {
