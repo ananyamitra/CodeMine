@@ -5,17 +5,17 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class MeetingManager {
+public class MyMeetingManager {
 	
 	public static void main(String[] args){
 		
-		Meeting m = new Meeting(2, 4);
-		Meeting m1 = new Meeting(7, 9);
-		Meeting m2 = new Meeting(6, 10);
-		Meeting m3 = new Meeting(11, 14);
-		Meeting m4 = new Meeting(12, 13);
+		MyMeeting m = new MyMeeting(2, 4);
+		MyMeeting m1 = new MyMeeting(7, 9);
+		MyMeeting m2 = new MyMeeting(6, 10);
+		MyMeeting m3 = new MyMeeting(11, 14);
+		MyMeeting m4 = new MyMeeting(12, 13);
 		
-		List<Meeting> meetingList = new ArrayList<Meeting>();
+		List<MyMeeting> meetingList = new ArrayList<MyMeeting>();
 		meetingList.add(m);
 		meetingList.add(m1);
 		meetingList.add(m2);
@@ -27,23 +27,23 @@ public class MeetingManager {
 		
 	}
 	
-	public static List<Meeting> condenseMeetings(List<Meeting> meetingList){
+	public static List<MyMeeting> condenseMeetings(List<MyMeeting> meetingList){
 		
 		//Sort the list of Meetings based on start time
-		Collections.sort(meetingList, new Comparator<Meeting>() {
+		Collections.sort(meetingList, new Comparator<MyMeeting>() {
 
-			public int compare(Meeting o1, Meeting o2) {
+			public int compare(MyMeeting o1, MyMeeting o2) {
 				
 				return o1.startTime - o2.startTime;
 			}
 		});
 		
-		List<Meeting> condensedList = new ArrayList<Meeting>();
+		List<MyMeeting> condensedList = new ArrayList<MyMeeting>();
 		condensedList.add(meetingList.get(0));
 		
 		for(int i = 1; i< meetingList.size(); i++){
-			Meeting consolidateMeeting = condensedList.get(condensedList.size()-1);
-			Meeting currentMeeting  = meetingList.get(i);
+			MyMeeting consolidateMeeting = condensedList.get(condensedList.size()-1);
+			MyMeeting currentMeeting  = meetingList.get(i);
 			
 			
 			if(currentMeeting.startTime > consolidateMeeting.endTime){

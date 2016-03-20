@@ -1,11 +1,11 @@
 package com.practice;
 
-public class Meeting {
+public class MyMeeting {
 
     int startTime;
     int endTime;
 
-    public Meeting(int startTime, int endTime) {
+    public MyMeeting(int startTime, int endTime) {
         // number of 30 min blocks past 9:00 am
         this.startTime = startTime;
         this.endTime   = endTime;
